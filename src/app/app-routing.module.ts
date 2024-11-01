@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomePagesComponent } from './shared/pages/home-pages/home-pages.component';
 import { AboutPagesComponent } from './shared/pages/about-pages/about-pages.component';
 
@@ -21,7 +21,12 @@ const routes: Routes =[
 ]
 
 @NgModule({
-
+  imports: [
+    RouterModule.forRoot( routes) // forRoot:=se usa en el módulo raiz de la aplicación
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 
 
