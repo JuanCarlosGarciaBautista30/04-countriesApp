@@ -10,8 +10,9 @@
 
 <ul class="list-group">
   <li
-    routerLink="home"
+    routerLink=""
     routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
     class="list-group-item ">
     Home Page
   </li>
@@ -21,5 +22,11 @@
     routerLinkActive="active"
     class="list-group-item">
     About Page
+  </li>
+  <li
+    routerLink="contact"
+    routerLinkActive="active"
+    class="list-group-item">
+    Contact Page
   </li>
 </ul>
